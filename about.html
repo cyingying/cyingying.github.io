@@ -16,7 +16,7 @@ header-img: "img/about-bg.jpg"
     {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
-
+<!--  -->
 <!-- English Version -->
 <!-- <div class="en post-container">
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
@@ -27,7 +27,7 @@ header-img: "img/about-bg.jpg"
 <script type="text/javascript">
     // get nodes
     var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
+    // var $en = document.querySelector(".en");
     var $select = document.querySelector("select");
 
     // bind hashchange event
@@ -36,12 +36,12 @@ header-img: "img/about-bg.jpg"
     // handle render
     function _render(){
         var _hash = window.location.hash;
-        // en
+        //en
         if(_hash == "#en"){
             $select.selectedIndex = 1;
             $en.style.display = "block";
             $zh.style.display = "none";
-        // zh by default
+        //zh by default
         }else{
             // not trigger onChange, otherwise cause a loop call.
             $select.selectedIndex = 0;
