@@ -15,11 +15,6 @@
 所以撕掉给自己设定的"无才，无材，无财..."等等等的标签
 
 
-
-
-
-
-
 <!--- [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
 - Building Progressive Web Apps · [CSDI Guangzhou 2017](http://www.csdisummit.com/)
 - The State of Progressive Web App · GDG IO Redux Beijing 2017
