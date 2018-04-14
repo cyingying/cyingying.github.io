@@ -1,23 +1,23 @@
+> 努力努力再努力x
+
+> 努力努力再努力x
+
+> 努力努力再努力x
+
+> 重要的事情说三遍
+
+薛颖颖，无才，无材，无财，还能干什么...
+
+但是曾经有一个人给我写过这样的话：薛颖颖 一个懂得持之以恒的姑娘，很了不起(希望你们没有过分的猜想，这只是我的一位老师)
+
+作为我学习前端的启蒙老师：我一直认为我不是他的得意门生,也不是他学生中的佼佼者(可能也有我不自信的原因)，当时的情景，我的状态是很懵的，当我的老师再给我的那一瞬间，说实话，不相信
+
+所以撕掉给自己设定的"无才，无材，无财..."等等等的标签
 
 
-> yeah,it's a girl.
 
 
-Hello, I am CaoFan, a not very clever girl, a front white & a student, I hope this personal blog will urge me to learn much about front and life.
 
-In the future, I will enter society, with excitement, tension, and some uneasy, hope I have been doing a free, hardworking girl all the time.
-
-I practiced in a company from Shanghai, that experience let me learn much whether it is life or learning, altought there are sad and pressure, but the best effort all. I hpoe in the near future that I can find my true attribution!
-
-##### Some
-
-- A fat girl who loves fitness now
-- A girl who loves swimming for a while but only breaststroke
-- A girl who has been very man, and now there may be with      long hair
-- A girl who has always liked to be alone, and knocking code
-- A fat girl who may be some self-esteem
-- A nice girl with a nice smile
-- One for your unknown girl
 
 
 <!--- [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
