@@ -10,7 +10,11 @@ layout: default
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');
+        overflow:hidden;
+        background-position: center center;
+        background-repeat: no-repeat;        
+        background-size:cover;
     }
 
     {% if page.header-mask %}

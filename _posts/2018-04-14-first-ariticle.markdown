@@ -4,7 +4,7 @@ title:     "个人博客所遇到的问题"
 subtitle:   " \"有拖延症的我\""
 date:       2018/04/14
 author:     "xueyingying"
-header-img: "img/first-article-bg.jpg"
+header-img: "img/in-post/first-page/first-bg.png"
 catalog: true
 tags:
   - 其他
