@@ -11,7 +11,7 @@ tags:
 
 ---
 
->"Proxy SwitchyOmega：一个强大的代理换工具"  
+>"Proxy SwitchyOmega：一个强大的代理转换工具"  
 
 
 ## 前言
