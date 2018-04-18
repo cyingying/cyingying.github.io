@@ -39,6 +39,9 @@ tags:
 
 ![Alt text](/img/in-post/ssh/chrome.png)
 
+<p id="build"></p>
+---
+
 #### 配置选项
 
 1.点击“选项”，进入配置页面
@@ -52,3 +55,11 @@ tags:
 3.设置备份，恢复备份:"导入/导出" -> "选项" -> "生成备份文件/从备份文件恢复"
 
  ![Alt text](/img/in-post/ssh/set-beifen.png)
+
+<p id="build"></p>
+---
+
+
+
+
+
