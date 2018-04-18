@@ -11,14 +11,15 @@ tags:
 
 ---
 
->"使用Proxy SwitchyOmega扩展程序科学上网!"  
+>"Proxy SwitchyOmega：一个强大的代理换工具"  
 
 
 ## 前言
 
 我如果想用Google来进行搜索，但是我们是无法访问外网的，那么要怎么实现？
 
-<p id="build"></p>
+SwitchyOmega是一个Chrome浏览器用来切换和管理不同代理的Chrome插件
+
 ---
 
 ## 正文
@@ -39,7 +40,6 @@ tags:
 
 ![Alt text](/img/in-post/ssh/chrome.png)
 
-<p id="build"></p>
 ---
 
 #### 配置选项
@@ -56,7 +56,6 @@ tags:
 
  ![Alt text](/img/in-post/ssh/set-beifen.png)
 
-<p id="build"></p>
 ---
 
 
