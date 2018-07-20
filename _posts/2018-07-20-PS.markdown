@@ -1,0 +1,50 @@
+---
+layout:    post
+title:     "PhotoShop简单操作!"
+subtitle:   " \"PS你可以做什么\""
+date:       2018/07/20
+author:     "xueyingying"
+header-img: "img/in-post/first-page/first-bg.png"
+catalog: true
+tags:
+  - 工具
+
+---
+
+> "PS简单操作"
+
+## 正文
+
+#### 获取颜色
+
+1.找到左侧工具栏
+
+2.找到如下图工具:选择Eyedropper Tool
+
+![Alt text](/img/in-post/ps/ps-color.png)
+
+3.点击想要获取的颜色即ok
+
+---
+
+#### 切片
+
+1.找到左侧工具栏
+
+2.找到如下图工具:选择Slice Tool工具
+
+![Alt text](/img/in-post/ps/ps-slice.png)
+
+3.框选出需要切取的部分
+
+---
+
+#### 取消框选出的切片部分
+
+1.按照第二部选择切片工具
+
+2.右键点击需要删除的切片，点击Delete Slice
+
+![Alt text](/img/in-post/ps/ps-cancleSlice.png)
+
+---

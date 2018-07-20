@@ -15,12 +15,15 @@ tags:
 
 ## 前言
 
-总结了一键搭建react环境：
+总结一键搭建react环境：
 
-<1>.create-react-app搭建
-<2>.ykit搭建
-<3>.antd搭建
-<4>.dva搭建
+    1.create-react-app搭建
+
+    2.ykit搭建
+
+    3.antd搭建
+
+    4.dva搭建
 
 ---
 
