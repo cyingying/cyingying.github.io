@@ -1,8 +1,8 @@
 ---
 layout:    post
-title:     "SwitchHosts!"
+title:     "react环境搭建!"
 subtitle:   " \"如何搭建react环境\""
-date:       2018/04/18
+date:       2018/07/20
 author:     "xueyingying"
 header-img: "img/in-post/first-page/first-bg.png"
 catalog: true
