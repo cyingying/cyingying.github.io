@@ -47,4 +47,6 @@ tags:
 
 ![Alt text](/img/in-post/ps/ps-cancleSlice.png)
 
+3.切片状态，左上角颜色为深蓝色的图框；取消切片之后，图框消失
+
 ---
