@@ -36,27 +36,20 @@ Charles是通过将自己设为网络代理服务器来完成封包截取的，�
 
 ---
 
-### 2.Charles手机抓包
+### 2.Charles截取移动设备上的网络封包
 
-首要条件：
-
-1.Charles想要抓取手机设备的包时，电脑设备和手机设备必须是在同一局域网下；白话一点，就是电脑和手机必须连在同一wifi下
-
-2.电脑设备操作：设置端口8888，根据如下操作
-![Alt text](/img/in-post/charles/setport1.png)
-
----
-
+1.打开Charles设置：选择 “Proxy”->”Proxy Settings”，填入代理端口 8888
 ![Alt text](/img/in-post/charles/setport2.png)
 
-3.此时手机设备需要进行额外操作：设置代理：选择手动代理，代理服务器主机名为和手机连接的电脑设备的ip地址，代理服务器端口为第2步设置的端口
-![Alt text](/img/in-post/charles/phone1.jpeg)
-
 ---
 
-![Alt text](/img/in-post/charles/phone2.jpeg)
+2.移动设备的设置(这里以安卓为例)：
 
----
+首先移动设备要和电脑连接在同一局域网下
+
+点击连接的网络右侧的箭头 -> 勾选手动代理 -> 填入代理服务器主机名(电脑的ip) -> 代理服务器端口号8888(上个步骤中Charles设置代理端口8888)
+
+设置好之后Charles就可以抓到移动设备上的网络封包
 
 电脑设备ip地址;终端ifconfig也可获得ip
 ![Alt text](/img/in-post/charles/ip.png)
@@ -66,15 +59,33 @@ Charles是通过将自己设为网络代理服务器来完成封包截取的，�
 电脑端打开charles，点击弹框的Allow允许，charles列表就会出现手机端HTTP请求
 
 #### HTTPS抓包
-HTTPS抓包是在HTTP基础上实现
+HTTPS抓包是在HTTP基础上实现:见3Charles截取HTTPS通讯信息
 需要注意：设置HTTPS抓包之前，https的请求显示如图：
 ![Alt text](/img/in-post/charles/https-error.png)
 
 ---
 
-### 3.Charles简单使用
+### 3.Charles截取HTTPS通讯信息
 
-#### 设置Charles为系统代理
+1.安装CA证书：点击charles顶部菜单，选择“help” => "SSL Proxying" -> "Install Charles Root Certificate"
+
+![Alt text](/img/in-post/charles/CA.png)
+
+2.mac用户需要设置对证书的完全信任，windows用户需要将证书存储在受信任的根证书颁发机构里(以下为Mac的设置)
+
+![Alt text](/img/in-post/charles/CA-trust1.png)
+
+3/选择证书，双击，出现如下图所示；选择"信任" -> "使用此证书时：" -> "始终信任"
+
+![Alt text](/img/in-post/charles/CA-trust2.png)
+
+4.配置HTTPS端口：选择“Proxy” -> “SSL Proxying Settings” ；点击"Add" -> "Port" 将Port设为443 -> "OK"
+
+![Alt text](/img/in-post/charles/https.png)
+
+5.如果想要截取移动设备的HTTPS的通讯信息，还需要在手机上安装相应的证书；点击charles顶部菜单，选择“help” => "SSL Proxying" -> "Install Charles Root Certificate on a Mobile Device or Remote Browser"，然后就可以看到 Charles 弹出的简单的安装教程
+
+### 4.设置Charles为系统代理
 
 打开Charles,选择菜单栏中的“Proxy” -> “Mac OS X Proxy“来将Charles设为系统代理
 
@@ -86,43 +97,7 @@ HTTPS抓包是在HTTP基础上实现
 
 ---
 
-#### Charles截取HTTPS通讯信息
-
-1.安装CA证书：点击charles顶部菜单，选择“help” => "SSL Proxying" -> "Install Charles Root Certificate"
-
-![Alt text](/img/in-post/charles/CA.png)
-
-2.mac用户需要设置对证书的完全信任，windows用户需要将证书存储在受信任的根证书颁发机构里(以下为Mac的设置)
-
-![Alt text](/img/in-post/charles/CA-trust1.png)
-
-选择证书，双击，出现如下图所示；选择"信任" -> "使用此证书时：" -> "始终信任"
-
-![Alt text](/img/in-post/charles/CA-trust2.png)
-
-3.配置HTTPS端口：选择“Proxy” -> “SSL Proxying Settings” ；点击"Add" -> "Port" 将Port设为443 -> "OK"
-
-![Alt text](/img/in-post/charles/https.png)
-
-4.如果想要截取移动设备的HTTPS的通讯信息，还需要在手机上安装相应的证书；点击charles顶部菜单，选择“help” => "SSL Proxying" -> "Install Charles Root Certificate on a Mobile Device or Remote Browser"，然后就可以看到 Charles 弹出的简单的安装教程
-
----
-
-#### Charles截取移动设备上的网络封包
-
-1.Charles上的设置：选择 “Proxy”->”Proxy Settings”，填入代理端口 8888
-
-2.移动设备的设置(这里以安卓为例)：
-
-首先移动设备要和电脑连接在同一局域网下
-
-点击连接的网络右侧的箭头 -> 勾选手动代理 -> 填入代理服务器主机名(电脑的ip) -> 代理服务器端口号8888(上个步骤中Charles设置代理端口8888)
-
-设置好之后Charles就可以抓到移动设备上的网络封包
-
----
-
-#### 过滤网络请求
+### 5.过滤网络请求
 
 有时候，我们只想监控指定目录服务器发送的请求；因此我们需要设置过滤,选择 "Proxy" -> ”Recording Setting" -> "Include"
 
@@ -134,7 +109,7 @@ HTTPS抓包是在HTTP基础上实现
 
 ---
 
-#### Map Remote
+### 6.Map Remote
 
 1.Map Remote：是将指定的网络请求重定向到另一个网络请求地址；选择 “Tools”->”Map Remote” 进入到相应的设置页面
 
