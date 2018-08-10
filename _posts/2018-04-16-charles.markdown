@@ -39,22 +39,36 @@ Charles是通过将自己设为网络代理服务器来完成封包截取的，�
 ### 2.Charles手机抓包
 
 首要条件：
+
 1.Charles想要抓取手机设备的包时，电脑设备和手机设备必须是在同一局域网下；白话一点，就是电脑和手机必须连在同一wifi下
 
 2.电脑设备操作：设置端口8888，根据如下操作
 ![Alt text](/img/in-post/charles/setport1.png)
+
+---
+
 ![Alt text](/img/in-post/charles/setport2.png)
 
 3.此时手机设备需要进行额外操作：设置代理：选择手动代理，代理服务器主机名为和手机连接的电脑设备的ip地址，代理服务器端口为第2步设置的端口
 ![Alt text](/img/in-post/charles/phone1.jpeg)
+
 ---
+
 ![Alt text](/img/in-post/charles/phone2.jpeg)
+
 ---
+
 电脑设备ip地址;终端ifconfig也可获得ip
 ![Alt text](/img/in-post/charles/ip.png)
 
 #### HTTP抓包
+设置代理后，需要在电脑端打开charles才可以抓包
+电脑端打开charles，点击弹框的Allow允许，charles列表就会出现手机端HTTP请求
 
+#### HTTPS抓包
+HTTPS抓包是在HTTP基础上实现
+需要注意：设置HTTPS抓包之前，https的请求显示如图：
+![Alt text](/img/in-post/charles/https-error.png)
 
 ---
 
