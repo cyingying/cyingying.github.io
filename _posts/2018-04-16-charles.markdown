@@ -39,7 +39,7 @@ Charles是通过将自己设为网络代理服务器来完成封包截取的，�
 ### 2.Charles截取移动设备上的网络封包
 
 1.打开Charles设置：选择 “Proxy”->”Proxy Settings”，填入代理端口 8888
-![Alt text](/img/in-post/charles/setport2.png)
+<img src="../img/in-post/charles/setport2.png" height="200" width="200">
 
 ---
 
@@ -85,7 +85,7 @@ HTTPS抓包是在HTTP基础上实现:见3Charles截取HTTPS通讯信息
 
 5.如果想要截取移动设备的HTTPS的通讯信息，还需要在手机上安装相应的证书；点击charles顶部菜单，选择“help” => "SSL Proxying" -> "Install Charles Root Certificate on a Mobile Device or Remote Browser"，然后就可以看到 Charles 弹出的简单的安装教程
 
-### 4.设置Charles为系统代理
+### 4.设置Charles为系统代理,电脑设备抓包
 
 打开Charles,选择菜单栏中的“Proxy” -> “Mac OS X Proxy“来将Charles设为系统代理
 
