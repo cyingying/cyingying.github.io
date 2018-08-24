@@ -39,7 +39,8 @@ Charles是通过将自己设为网络代理服务器来完成封包截取的，�
 ### 2.Charles截取移动设备上的网络封包
 
 1.打开Charles设置：选择 “Proxy”->”Proxy Settings”，填入代理端口 8888
-<img src="../img/in-post/charles/setport2.png" height="200" width="200">
+<!-- setport2.png -->
+<img src="https://picbed.qunarzz.com/image/c62ab127578bb5b6aed780dcfaaf08ee.png" width="400" />
 
 ---
 
@@ -52,7 +53,10 @@ Charles是通过将自己设为网络代理服务器来完成封包截取的，�
 设置好之后Charles就可以抓到移动设备上的网络封包
 
 电脑设备ip地址;终端ifconfig也可获得ip
-![Alt text](/img/in-post/charles/ip.png)
+<!-- ip.png -->
+<img src="https://picbed.qunarzz.com/image/2bbe96ac34aa70cf19be47c20744fd04.png" width="400" />
+
+---
 
 #### HTTP抓包
 设置代理后，需要在电脑端打开charles才可以抓包
@@ -61,7 +65,8 @@ Charles是通过将自己设为网络代理服务器来完成封包截取的，�
 #### HTTPS抓包
 HTTPS抓包是在HTTP基础上实现:见3Charles截取HTTPS通讯信息
 需要注意：设置HTTPS抓包之前，https的请求显示如图：
-![Alt text](/img/in-post/charles/https-error.png)
+<!-- https-error.png -->
+<img src="https://picbed.qunarzz.com/image/f3ffd505f480b4e16f9e43589438d0a4.png" width="400" />
 
 ---
 
@@ -71,25 +76,39 @@ HTTPS抓包是在HTTP基础上实现:见3Charles截取HTTPS通讯信息
 
 ![Alt text](/img/in-post/charles/CA.png)
 
+---
+
 2.mac用户需要设置对证书的完全信任，windows用户需要将证书存储在受信任的根证书颁发机构里(以下为Mac的设置)
 
-![Alt text](/img/in-post/charles/CA-trust1.png)
+<!-- CA-trust1.png -->
+<img src="https://picbed.qunarzz.com/image/e7c59a10d3e448078515e349d08e47d9.png" width="400" />
+
+---
 
 3/选择证书，双击，出现如下图所示；选择"信任" -> "使用此证书时：" -> "始终信任"
 
-![Alt text](/img/in-post/charles/CA-trust2.png)
+<!-- CA-trust2.png -->
+<img src="https://picbed.qunarzz.com/image/5f229094ab219ce435bfc2e2c9d6636a.png" width="400" />
+
+---
 
 4.配置HTTPS端口：选择“Proxy” -> “SSL Proxying Settings” ；点击"Add" -> "Port" 将Port设为443 -> "OK"
 
-![Alt text](/img/in-post/charles/https.png)
+<!-- https.png -->
+<img src="https://picbed.qunarzz.com/image/720a55368fc4f6eecd628a07111a9421.png" width="400" />
+
+---
 
 5.如果想要截取移动设备的HTTPS的通讯信息，还需要在手机上安装相应的证书；点击charles顶部菜单，选择“help” => "SSL Proxying" -> "Install Charles Root Certificate on a Mobile Device or Remote Browser"，然后就可以看到 Charles 弹出的简单的安装教程
+
+---
 
 ### 4.设置Charles为系统代理,电脑设备抓包
 
 打开Charles,选择菜单栏中的“Proxy” -> “Mac OS X Proxy“来将Charles设为系统代理
 
-![Alt text](/img/in-post/charles/charles-proxy.png)
+<!-- charles-proxy -->
+<img src="https://picbed.qunarzz.com/image/6e78211a52ad4c46f3cda2ce99433c51.png" width="400" />
 
 > 注意：Chrome和Firefox浏览器默认是不使用系统的代理服务器设置，而Charles是通过将自己设置为代理服务器来完成抓包的，所以在默认情况下无法截取Chrome和Firefox浏览器的网络通讯内容。如果需要截取的话，在Chrome中设置
 
@@ -103,9 +122,12 @@ HTTPS抓包是在HTTP基础上实现:见3Charles截取HTTPS通讯信息
 
 ![Alt text](/img/in-post/charles/filter1.png)
 
+---
+
 选择“Add”,然后填入需要监控的协议，主机地址，端口号;那么此时只有设置的协议才会被Charles抓包
 
-![Alt text](/img/in-post/charles/filter2.png)
+<!-- filter2.png -->
+<img src="https://picbed.qunarzz.com/image/a70d8a19a62cd101b5a4d61616d38b00.png" width="400" />
 
 ---
 
@@ -115,12 +137,16 @@ HTTPS抓包是在HTTP基础上实现:见3Charles截取HTTPS通讯信息
 
 ![Alt text](/img/in-post/charles/Map-remote1.png)
 
+---
+
 2.首先Enable Map Remote，再Add
 
-![Alt text](/img/in-post/charles/Map-remote2.png)
+<!-- Map-remote2.png -->
+<img src="https://picbed.qunarzz.com/image/ab103e8588c8db8d211a2039afb61672.png" width="400" />
+
+---
 
 3.Add之后，接下来就是配置了：需要分别填写网络重定向的源地址和目的地址;对于不需要限制的条件，可以留空;下图为一个把“hackathon.corp.qunar.com”下的src下的所有文件的请求都重定向到127.0.0.1
 
-![Alt text](/img/in-post/charles/Map-remote3.png)
-
----
+<!-- Map-remote3.png -->
+<img src="https://picbed.qunarzz.com/image/9a780f8995b1bfd172c4607e29487e6c.png" width="400" />

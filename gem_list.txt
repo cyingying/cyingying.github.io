@@ -1,0 +1,15 @@
+bigdecimal
+CFPropertyList
+did_you_mean
+io-console
+json
+libxml-ruby
+minitest
+net-telnet
+nokogiri
+power_assert
+psych
+rake
+rdoc
+sqlite3
+test-unit
